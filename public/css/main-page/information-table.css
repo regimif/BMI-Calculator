@@ -1,0 +1,47 @@
+/* INFORMATION CONTAINER BASICS SPECIFICATIONS */
+.bmi-information{
+    flex-direction: column;
+}
+/*  */
+
+
+/* RESULT DISPLAY */
+#result{
+    font-size: 1.3rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: 60%;
+}
+/*  */
+
+
+/* CLASSIFICATION TABLE */
+table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table-body{
+    border-spacing: 0 0.5rem;
+}
+
+.table-body td{
+    padding: 0.5rem;
+}
+
+.table-body td:first-child{
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.table-body td:last-child{
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+/*  */
+
+/* BUTTON */
+#back{
+    background-color: var(--btn-back-bg-color);
+    align-self: flex-start;
+}
+/*  */

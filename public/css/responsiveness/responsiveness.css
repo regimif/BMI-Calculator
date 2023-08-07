@@ -1,0 +1,54 @@
+@media only screen and (max-width: 750px) {
+    header .header-container .brand #logo{
+        display: none;
+    }
+
+    header .header-container nav.nav-links{
+        font-size: 1.4rem;
+    }
+
+    header .header-container .brand h1 a{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header{
+        padding: 1rem 2rem 3.5rem 2rem;
+    }
+
+    header .header-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .header-container .brand h1 a{
+        display: flex;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    header .header-container nav.nav-links a{
+        display: flex;
+        margin: 0 1rem 0 1rem;
+        font-size: 1.3rem
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    header{
+        padding: 0.5rem 1rem 2.7rem 1rem;
+    }
+
+    header .header-container .brand h1 a{
+        font-size: 1.2rem;
+        text-decoration: none;
+    }
+
+    header .header-container nav.nav-links a{
+        font-size: 1rem;
+        margin: 0;
+    }
+
+}

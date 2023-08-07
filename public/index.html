@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Reginaldo Isiodoro">
+    <link rel="icon" href="images/logo.png">
+    <title>BMI Calculator</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../public/css/basics/basics.css">
+
+    <link rel="stylesheet" href="../public/css/main-page/header.css">
+    <link rel="stylesheet" href="../public/css/main-page/main.css">
+    <link rel="stylesheet" href="../public/css/main-page/footer.css">
+    <link rel="stylesheet" href="../public/css/main-page/information-table.css">
+
+    <link rel="stylesheet" href="../public/css/css-classes/input-block.css">
+    <link rel="stylesheet" href="../public/css/css-classes/hidden.css">
+    <link rel="stylesheet" href="../public/css/css-classes/result-color.css">
+    
+    <link rel="stylesheet" href="../public/css/responsiveness/responsiveness.css">
+  </head>
+
+<body>
+    <header>
+      <div class="header-container">
+        <div class="brand">
+          <img id="logo" src="images/logo.png" alt="Logo Calango Lifestyle">
+          <h1><a href="">Calango Lifestyle</a></h1>
+        </div>
+        <nav class="nav-links">
+          <a href="">FIT</a>
+          <a href="">NUTRI</a>
+          <a href="">SKIN</a>
+          <a href="">AGE</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="calculator-container">
+        <h3 id="page-subtitle">BMI Calculator</h3>
+
+        <div class="measurement-system">
+          <span>Unit selector</span>
+          <button id="metric">Metric</button>
+          <button id="imperial">Imperial</button>
+        </div>
+        <div class="calculator-input">
+            <div class="input-height">
+                <p class="height-label">Height</p>
+                <input id="height" type="number" placeholder="180" min="0"> <span id="height-type">cm</span>
+                <input id="height-inches" type="number" placeholder="11" min="0" class="hidden"> <span class="hidden" id="height-type-inches">in</span>
+              </div>
+            <div class="input-weight">
+              <p class="weight-label">Weight</p>
+              <input id="weight" type="number" placeholder="80" min="0"> <span id="weight-type">kg</span>
+            </div>
+        </div>
+        
+        <div class="bottom-buttons">
+          <button id="calculate">Calculate</button>
+          <button id="reset">Reset</button>
+        </div>
+      </main>
+      
+      <aside class="bmi-information hidden">
+        <span id="result"></span>
+        <table>
+        <thead class="table-head">
+          <tr>
+            <th id="table-title">Classification</th>
+          </tr>
+        </thead>
+        <tbody class="table-body">
+          <tr>
+            <td class="table-underweight">Underweight</td>
+            <td class="table-underweight"> Below 18.5</td>
+          </tr>
+          <tr>
+            <td class="table-normal">Normal</td>
+            <td class="table-normal">Between 18.5 and 24.9</td>
+          </tr>
+          <tr>
+            <td class="table-overweight">Overweight</td>
+            <td class="table-overweight">Between 25 and 29.9</td>
+          </tr>
+          <tr>
+            <td class="table-obesity-1">Obesity Class I</td>
+            <td class="table-obesity-1">Between 30 and 34.9</td>
+          </tr>
+          <tr>
+            <td class="table-obesity-2">Obesity Class II</td>
+            <td class="table-obesity-2">Between 35 and 39.9</td>
+          </tr>
+          <tr>
+            <td class="table-obesity-3">Obesity Class III</td>
+            <td class="table-obesity-3">40 or higher</td>
+          </tr>
+        </tbody>
+      </table>
+      <button id="back">Back</button>
+    </aside>
+
+    <footer>
+      <div class="footer-container">  
+        <p>&copy; 2023 Calango Lifestyle</p>
+      </div>
+    </footer>
+
+    <!-- JS FILES AND JQUERY SCRIPT -->
+    <script type="module" src="/src/index.js"></script>
+
+    <script type="module" src="/src/main-page/calculation.js"></script>
+    <script type="module" src="/src/main-page/result.js"></script>
+    
+    <script type="module" src="/src/classes/input-validation.js"></script>
+    <script type="module" src="/src/classes/handle-content.js"></script>
+
+    <script type="module" src="/src/colors/colors.js"></script>
+    
+    <script type="module" src="/src/buttons/buttons.js"></script>
+</body>
+</html>

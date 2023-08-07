@@ -1,0 +1,59 @@
+:root{
+  --underweight-bg-color: #F9D423;
+  --overweight-bg-color: #F9D423;
+  --normal-bg-color: #7AC74F;
+  --obesity1-bg-color: #FF9F00;
+  --obesity2-bg-color: #FF6358;
+  --obesity3-bg-color: #8B5FBF;
+}
+
+
+/* Result colors */
+.under-weight{
+    background-color: var(--underweight-bg-color);
+}
+
+.normal-weight {
+    background-color: var(--normal-bg-color);
+}
+
+.over-weight{
+  background-color: var(--overweight-bg-color);
+}
+
+.obesity-class1{
+    background-color: var(--obesity1-bg-color);
+}
+
+.obesity-class2{
+    background-color: var(--obesity2-bg-color);
+}
+
+.obesity-class3{
+    background-color: var(--obesity3-bg-color);
+}
+
+/* Table colors */
+.color-underweight{
+  background-color: var(--underweight-bg-color);
+}
+
+.color-normal {
+  background-color: var(--normal-bg-color);
+}
+
+.color-overweight{
+  background-color: var(--overweight-bg-color);
+}
+
+.color-obesity-1 {
+  background-color: var(--obesity1-bg-color);
+}
+
+.color-obesity-2 {
+  background-color: var(--obesity2-bg-color);
+}
+
+.color-obesity-3 {
+  background-color: var(--obesity3-bg-color);
+}

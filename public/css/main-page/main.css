@@ -1,0 +1,71 @@
+/* ROOT */
+:root{
+    --btn-text-color: #fff;
+    --btn-unit-bg-color: #7dbff8;
+    --btn-calculate-bg-color: #489de7;
+    --btn-reset-bg-color: #eb5555;
+    --btn-back-bg-color: #a9a9a9;
+}
+/*  */
+
+/* MAIN CONTAINER BASICS SPECIFICATIONS */
+.calculator-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    height: 25rem;
+}
+/*  */
+
+.calculator-container #page-subtitle{
+    font-size: 2rem;
+}
+
+
+/* INPUT */
+.calculator-input .height-label,
+.weight-label{
+    font-size: 1.5rem;
+    border-bottom: 1rem;
+    margin: 1rem 0 1rem 0;
+}
+
+
+.calculator-container .calculator-input .input-height #height,
+#weight,
+#height-inches{
+    width: 6rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+/*  */
+
+
+/* BUTTONS */
+button{
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--btn-text-color);
+}
+
+#metric,
+#imperial{
+    background-color: var(--btn-unit-bg-color);
+}
+
+#calculate{
+    background-color: var(--btn-calculate-bg-color);
+}
+
+#reset{
+    background-color: var(--btn-reset-bg-color);
+}
+
+.bottom-buttons {
+    margin-top: 1rem;
+}
+/*  */

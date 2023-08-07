@@ -1,0 +1,58 @@
+/* ROOT */
+:root{
+    --primary-color: linear-gradient(90deg,#004684 9.93%,#1664a9 69.58%);
+    --link-color: #fff;
+}
+/*  */
+
+/* HEADER BASICS SPECIFICATIONS */
+header{
+    padding: 2rem;
+    width: 100%;
+    background: var(--primary-color);
+}
+
+header .header-container{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: var(--link-color);
+    max-height: 3rem;
+}
+/*  */
+
+/* LOGO AND TITLE */
+header .header-container .brand{
+    display: flex;
+    gap: 1rem;
+}
+
+header .header-container .brand #logo{
+    height: 3rem;
+}
+
+header .header-container .brand h1 a{
+    text-decoration: underline;
+    color: var(--link-color)
+}
+/*  */
+
+/* NAV LINKS */
+header .header-container nav.nav-links{
+    display: flex;
+    align-self: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+
+
+header .header-container nav.nav-links a{
+    text-decoration: none;
+    color: inherit;
+    transition: all ease 0.5s;
+}
+
+header .header-container nav.nav-links a:hover{
+    letter-spacing: 0.1rem;
+}
+/*  */

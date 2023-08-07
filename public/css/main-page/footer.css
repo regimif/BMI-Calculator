@@ -1,0 +1,13 @@
+:root{
+    --primary-color: linear-gradient(90deg,#004684 9.93%,#1664a9 69.58%);
+}
+
+footer{
+    width: 100%;
+}
+
+footer .footer-container{
+    text-align: center;
+    background: var(--primary-color);
+    color: #fff;
+}

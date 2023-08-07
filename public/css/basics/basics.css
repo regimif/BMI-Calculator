@@ -1,0 +1,23 @@
+:root{
+    --body-bg-color: #edfaff;
+    --body-text-color: #0f0f0f;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--body-bg-color);
+    color: var(--body-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    cursor: default;
+}
